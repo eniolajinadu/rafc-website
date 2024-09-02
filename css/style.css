@@ -1,0 +1,150 @@
+body{
+    font-size: large;
+    color: black;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: grey;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+div.Logo{
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.Logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+div.header{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+}
+
+.link{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.link:hover{
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    place-items: initial;
+    flex-wrap: nowrap;
+    gap: 32px;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+h2{
+    font-style: italic;
+    color: cornflowerblue;
+
+}
+
+table{
+    display: flex;
+    background-color: darkslategrey;
+    color: darkorange;
+}
+
+th{
+    font-style: italic;
+}
+section{
+    border-radius: 20px;
+    border-color: aqua;
+    color: black;
+     background-color: rgb(128, 128, 128);
+    text-align: center;
+}
+
+blockquote{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: Impact;
+}
+
+
+table{
+    color: aqua;
+    display: block;
+    font-family: 'Lucida Sans';
+}
+
+footer{
+    text-align: center;
+}
+
+button{
+    color: rgb(38, 0, 255);
+    font-family: "Arial";
+    background-color: grey;
+    text-decoration: double;
+}
+
+div.link:hover{
+    transform: scale(115%);
+}
+button:hover{
+    font-style: italic;
+    border-radius: 2rem;
+    size: 40px;;
+}
+
+p{
+    font-style: italic;
+}
+
+div.fieldset#login{
+    display: inline;
+    height: 75px;
+    width: 75px;
+    align-items: center;
+    float: left;
+    justify-self: center;
+    align-self: center;
+}
+fieldset#login{
+    display: grid;
+    height: 75px;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 1px;
+    border-style: none;
+    border-image: initial;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+label.Username{
+    justify-content: center;
+}
