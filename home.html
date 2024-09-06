@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Official Web Page Of Chaaaampions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/images/img1/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/img1/apple-touch-icon.png">
@@ -19,8 +20,8 @@
                     <img class="icon" src="/images/img1/favicon.ico" alt="Rooney Athletic Football Club Logo">
                 </a>
 
-            </div>    
-            <nav class="nav-container">
+            </div> 
+            <div class="container">
                 <link>
                     <div class="link">
                         <a href="/html/news.html">NEWS</a>
@@ -37,12 +38,13 @@
                     
                     <div class="fieldset">
                         <fieldset id="login">
-                            <label for="Username">
-                                Username<input type="text" placeholder="john.doe">
-                            </label>
-                            <label for="Password">
-                                Password<input type="password" placeholder="********">
-                            </label>
+                            <div class="theme-toggle">
+                                <input type="checkbox" id="theme-toggle-checkbox">
+                                <label for="theme-toggle-checkbox">
+                                  <span class="theme-toggle-label">Dark Mode</span>
+                                </label>
+                            </div>
+
                             <button type="submit">
                                 <a href="/html/login.html">Log In</a>
                             </button>
@@ -52,12 +54,11 @@
                         </fieldset>
                     </div>
                 </link>
-            </nav>
+            </div>
         </div>
-        <H2>Homepage of Chaaaampions!</H2>
-        <h3>estd. 1980</h3>
-
     </div>
+
+    
     <table>
              <center><th><CENter>Years in Titles</CENter></th>
                  <td>1999</td>
@@ -94,6 +95,8 @@
             17.144.184.19, Rooney Athletic Football Club&copy;&copysr;
         </button>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
