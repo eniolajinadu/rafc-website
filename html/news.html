@@ -5,54 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAFC NEWS!</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/images/img1/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/img1/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/img1/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/img1/favicon-16x16.png">
+    <link rel="icon" href="/images/img1/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/images/img1/apple-touch-icon.png">
     <link rel="manifest" href="/images/img1/site.webmanifest">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/1.9.10/htmx.min.js" integrity="sha512-9NizV85YskjmA5Ybnqmy7wx5hmXh7QVkGODzpj/z15F1K8SigdF5uJnSoqrUj+GF4WK/9eIXGJgqXZXb+W8/8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div>
-        <div class="header">
-            <div class="Logo">
-                <a href="/home.html">
-                    <img class="icon" src="/images/img1/favicon.ico" alt="Rooney Athletic Football Club Logo">
-                </a>
-
-            </div>    
-            <div class="container">
-                <link>
-                    <div class="link">
-                        <a href="/html/news.html">NEWS</a>
-                    </div>
-                    <div class="link">
-                        <a href="/html/players.html">PLAYERS</a>
-                    </div>
-                    <div class="link">
-                        <a href="/html/matches.html">MATCHES</a>
-                    </div>
-                    <div class="link">
-                        <a href="/html/about.html">ABOUT CLUB</a>
-                    </div>
-                    
-                    <div class="fieldset">
-                        <fieldset id="login">
-                            <label for="Username">
-                                Username<input type="text" placeholder="john.doe">
-                            </label>
-                            <label for="Password">
-                                Password<input type="password" placeholder="********">
-                            </label>
-                            <button type="submit">
-                                <a href="/html/login.html">Log In</a>
-                            </button>
-                            <button type="button">
-                                <a href="/html/signup.html">Sign Up</a>
-                            </button>
-                        </fieldset>
-                    </div>
-                </link>
+    <header>
+        <div class="header-content">
+            <a href="/home.html" class="logo">
+                <img src="/images/img1/favicon.ico" alt="Rooney Athletic Football Club Logo" width="32" height="32">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/html/news.html">NEWS</a></li>
+                    <li><a href="/html/players.html">PLAYERS</a></li>
+                    <li><a href="/html/matches.html">MATCHES</a></li>
+                    <li><a href="/html/about.html">ABOUT CLUB</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="/html/login.html" class="btn btn-primary">Log In</a>
+                <a href="/html/signup.html" class="btn btn-secondary">Sign Up</a>
             </div>
         </div>
+    </header>
+
+    <main>
+        <h1 class="sr-only">RAFC News</h1>
+        <section class="news-container">
+            <article class="news-item featured">
+                <h2>Rooney Athletic FC Clinches Division Title in Thrilling Overtime Victory</h2>
+                <p class="date"><time datetime="2024-09-08">September 8, 2024</time></p>
+                <img src="/api/placeholder/800/400" alt="Rooney Athletic FC players celebrating their victory on the field" width="800" height="400" loading="lazy">
+                <p>In a nail-biting finish to the season, Rooney Athletic Football Club secured the division title with a stunning overtime victory against their arch-rivals. The team's perseverance and tactical brilliance shone through as they overcame a two-touchdown deficit in the fourth quarter.</p>
+                <a href="#" class="read-more">Read full story<span class="sr-only"> about Rooney Athletic FC's division title win</span></a>
+            </article>
+
+            <div class="news-grid">
+                <article class="news-item">
+                    <h3>Rising Star Quarterback Sets New Passing Record</h3>
+                    <p class="date"><time datetime="2024-09-05">September 5, 2024</time></p>
+                    <img src="/api/placeholder/400/200" alt="Quarterback Tom Johnson throwing a long pass during a game" width="400" height="200" loading="lazy">
+                    <p>Rooney Athletic's young quarterback, Tom Johnson, has set a new league record with an incredible 5,500 passing yards this season. Coaches and analysts are already drawing comparisons to NFL legends.</p>
+                    <a href="#" class="read-more">Read more<span class="sr-only"> about Tom Johnson's new passing record</span></a>
+                </article>
+
+                <article class="news-item">
+                    <h3>RAFC Announces State-of-the-Art Training Facility</h3>
+                    <p class="date"><time datetime="2024-09-03">September 3, 2024</time></p>
+                    <img src="/api/placeholder/400/200" alt="Architectural render of RAFC's new training facility featuring modern buildings and practice fields" width="400" height="200" loading="lazy">
+                    <p>The club has unveiled plans for a cutting-edge training complex, set to open next season. The facility will feature advanced sports science labs, virtual reality training rooms, and eco-friendly design.</p>
+                    <a href="#" class="read-more">Read more<span class="sr-only"> about RAFC's new training facility</span></a>
+                </article>
+
+                <article class="news-item">
+                    <h3>Community Outreach Program Expands with Youth Clinics</h3>
+                    <p class="date"><time datetime="2024-08-30">August 30, 2024</time></p>
+                    <img src="/api/placeholder/400/200" alt="Group of children participating in a football clinic led by RAFC coaches" width="400" height="200" loading="lazy">
+                    <p>Rooney Athletic FC is doubling down on its commitment to the community by expanding its youth football clinics. The program aims to reach over 5,000 kids in the upcoming year.</p>
+                    <a href="#" class="read-more">Read more<span class="sr-only"> about RAFC's expanded youth clinics</span></a>
+                </article>
+
+                <article class="news-item">
+                    <h3>Injury Update: Star Running Back Expected to Return Mid-Season</h3>
+                    <p class="date"><time datetime="2024-08-28">August 28, 2024</time></p>
+                    <img src="/api/placeholder/400/200" alt="RAFC's star running back performing rehabilitation exercises in the team's medical facility" width="400" height="200" loading="lazy">
+                    <p>Fans can breathe a sigh of relief as the medical team confirms that RAFC's star running back is making a speedy recovery. He's expected to rejoin the team by week 8 of the regular season.</p>
+                    <a href="#" class="read-more">Read more<span class="sr-only"> about the star running back's injury update</span></a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
